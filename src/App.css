@@ -31,3 +31,32 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  background-image: url("./img/MilkyWay.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo-container{
+  display:flex;
+  justify-content: flex-start;
+}
+.logo {
+  width: 20%;
+  margin:4%;
+  
+}
+.cntrBox{
+  width: 70%;
+  background: white;
+  border-radius: 20px;
+}
+
+footer {
+  background: white;
+}
