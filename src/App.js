@@ -1,10 +1,12 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import Header from "./Components/header";
+import Image from "../src/Components/image";
 import "./App.css";
+import Nasa from "../src/img/nasa.png"
 
 
 function App() {
-  const [photo, setPhoto] = useState()
+  
   return (
     <div className="App">
       <div className="container">
@@ -13,21 +15,16 @@ function App() {
 
         </section>
         <section className="cntrBox">
-          <p>This is some text</p>
-
+          <Image />
+          <div>
+            <img className="nasa" src={Nasa} alt="Nasa" />
+          </div>
 
 
         </section>
-        
-        {/* <p>
-          Read through the instructions in the README.md file to build your NASA
-          app! Have fun 🚀!
-        </p> */}
-
-
       </div>
       <footer>
-        <h4>Copyright 2019</h4>
+        <h4>Nasa Photo of the Day Copyright 2019</h4>
       </footer>
     </div>
   );
