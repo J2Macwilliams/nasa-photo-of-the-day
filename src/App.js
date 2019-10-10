@@ -5,6 +5,7 @@ import "./App.css";
 import Nasa from "../src/img/nasa.png"
 
 
+
 function App() {
   
   return (
@@ -16,9 +17,8 @@ function App() {
         </section>
         <section className="cntrBox">
           <Image />
-          <div>
-            <img className="nasa" src={Nasa} alt="Nasa" />
-          </div>
+          <img className="nasa" src={Nasa} alt="Nasa" />
+          
 
 
         </section>
