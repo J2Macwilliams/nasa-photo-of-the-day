@@ -20,14 +20,16 @@ const Container = styled.div`
   justify-content: flex-start;
   justify-content: space-evenly;
   align-items: center;
+  
 `;
 
 const CntrBox = styled.div`
-  width: 80%;
+  width: 70%;
   background: white;
   border-radius: 20px;
   margin:0 0 5% 0;
   text-align: center;
+  
 `;
 
 const NasaTag = styled.img`

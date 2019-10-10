@@ -36,3 +36,9 @@
 }
 
 
+.APOD {
+  width: 70%;
+  border: 5px solid goldenrod;
+  box-shadow: 8px 8px 8px black;
+  border-radius: 20px;
+}
