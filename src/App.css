@@ -40,7 +40,6 @@
   background-image: url("./img/MilkyWay.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -81,8 +80,4 @@
 .nasa {
   width: 50%;
   margin: 2%;
-}
-footer {
-  background: white;
-  font-size: .7rem;
 }
