@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import NasaLogo from "../img/logo.png";
+import nasaLogo from "../img/logo.png";
 
 const LogoContainer = styled.div`
 display:flex;
@@ -19,7 +19,7 @@ font-size: 3rem;
 const Header = () => {
   return (
     <LogoContainer>
-      <Logo src={NasaLogo} alt="Nasa's logo" />
+      <Logo src={nasaLogo} alt="Nasa's logo" />
       <HeadH1>Photo of the Day</HeadH1>
     </LogoContainer>
   );

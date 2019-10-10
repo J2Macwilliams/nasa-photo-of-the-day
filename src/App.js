@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "./Components/header";
+import HeaderBox from "./Components/header";
 import Data from "./Components/data";
 import "./App.css";
-import Nasa from "../src/img/nasa.png";
+import nasa from "../src/img/nasa.png";
 import styled from "styled-components";
-import Background from "./img/MilkyWay.jpg";
+import background from "./img/MilkyWay.jpg";
 
 const BackgroundImage = styled.div`
-  background-image: url(${Background});
+  background-image: url(${background});
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
@@ -41,10 +41,10 @@ function App() {
   return (
     <BackgroundImage>
       <Container>
-              <Header />
+              <HeaderBox />
             <CntrBox>
               <Data />
-              <NasaTag src={Nasa} alt="Nasa" />
+              <NasaTag src={nasa} alt="Nasa" />
             </CntrBox>
       </Container>
     </BackgroundImage>
