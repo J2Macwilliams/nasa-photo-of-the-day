@@ -2,11 +2,13 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 import Title from "./title";
 import Date from "./date";
+import Image from "./image";
 
 
 const Data = () => {
   const [photo, setPhoto] = useState([]);
-  const [title, setTitle] = useState([]);
+  
+  
 
   useEffect(() => {
     axios
@@ -14,18 +16,14 @@ const Data = () => {
       .then(response => {
         console.log(response);
         setPhoto(response.data)
-        setTitle(response.data)
       });
   }, []);
 
   return (
       <div className="photo">
-        <Title title={title.title}/>
-         <img className="APOD" src={photo.url} alt="Nasa-APOD"/>
+        <Title title={photo.title}/>
+        <Image photoUrl={photo.url}/>
         <Date date={photo.date}/>
-        
-        
-        
       </div>
   );
 }
