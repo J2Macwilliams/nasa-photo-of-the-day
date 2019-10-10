@@ -1,9 +1,17 @@
 import React, {useState, useEffect} from "react";
+import styled from "styled-components";
 import axios from "axios";
 import Title from "./title";
 import Date from "./date";
 import Image from "./image";
 
+const Photo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding: 2%;
+`;
 
 const Data = () => {
   const [photo, setPhoto] = useState([]);
@@ -20,11 +28,11 @@ const Data = () => {
   }, []);
 
   return (
-      <div className="photo">
+      <Photo>
         <Title title={photo.title}/>
         <Image photoUrl={photo.url}/>
         <Date date={photo.date}/>
-      </div>
+      </Photo>
   );
 }
 export default Data;
