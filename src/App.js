@@ -1,13 +1,25 @@
 import React from "react";
+import Header from "./Components/header";
+import Data from "./Components/data";
 import "./App.css";
+import Nasa from "../src/img/nasa.png"
+
+
 
 function App() {
+  
+
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <div className="container">
+        <section className="headerBox">
+          <Header />
+        </section>
+        <section className="cntrBox">
+          <Data />
+          <img className="nasa" src={Nasa} alt="Nasa" />
+        </section>
+      </div>
     </div>
   );
 }
