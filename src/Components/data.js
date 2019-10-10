@@ -5,6 +5,7 @@ import Title from "./title";
 import Date from "./date";
 import Image from "./image";
 
+
 const Photo = styled.div`
   display: flex;
   flex-direction: column;

@@ -2,9 +2,8 @@
 * {
   box-sizing: border-box;
   max-width: 100%;
-}.App {
-  text-align: center;
 }
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

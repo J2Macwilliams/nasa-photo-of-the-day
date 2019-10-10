@@ -4,8 +4,17 @@ import Data from "./Components/data";
 import "./App.css";
 import Nasa from "../src/img/nasa.png";
 import styled from "styled-components";
+import Background from "./img/MilkyWay.jpg";
+
+const BackgroundImage = styled.div`
+  background-image: url(${Background});
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+`;
 
 const Container = styled.div`
+  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -18,6 +27,7 @@ const CntrBox = styled.div`
   background: white;
   border-radius: 20px;
   margin:0 0 5% 0;
+  text-align: center;
 `;
 
 const NasaTag = styled.img`
@@ -25,20 +35,19 @@ const NasaTag = styled.img`
   margin: 2%;
 `;
 
-
 function App() {
   
 
   return (
-    <div className="App">
+    <BackgroundImage>
       <Container>
-          <Header />
-        <CntrBox>
-          <Data />
-          <NasaTag src={Nasa} alt="Nasa" />
-        </CntrBox>
+              <Header />
+            <CntrBox>
+              <Data />
+              <NasaTag src={Nasa} alt="Nasa" />
+            </CntrBox>
       </Container>
-    </div>
+    </BackgroundImage>
   );
 }
 

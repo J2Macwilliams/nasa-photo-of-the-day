@@ -12,7 +12,7 @@ const Logo = styled.img`
 `;
 
 const HeadH1 = styled.h1`
-color: Black;
+color: white;
 font-size: 3rem;
 `;
 
