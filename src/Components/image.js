@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-
 function Image() {
   const [image, setImage] = useState([]);
 
@@ -15,15 +14,14 @@ function Image() {
   }, []);
 
   return (
-    
+    <div className="photoContainer">
       <div className="photo">
           <h2>{image.title}</h2>
          <img className="APOD" src={image.url} alt="Nasa APOD"/>
          {/* <p>{image.explanation}</p> */}
          <p>{image.date}</p>
-      
       </div>
-    
+    </div>
   );
 }
 export default Image;
