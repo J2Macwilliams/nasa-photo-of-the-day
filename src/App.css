@@ -1,6 +1,9 @@
-.App {
-  text-align: center;
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
 }
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -30,4 +33,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.APOD {
+  width: 70%;
+  border: 5px solid goldenrod;
+  box-shadow: 8px 8px 8px black;
+  border-radius: 20px;
 }
